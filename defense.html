@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Development defense and rationale for the Photomemories website">
+  <title>Development Defense | Photomemories</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+  <header>
+    <div class="nav-wrap">
+      <a class="brand" href="index.html"><img src="assets/images/colored-logo.svg" alt="Photomemories logo"></a>
+      <button class="menu-toggle" aria-label="Toggle navigation" aria-expanded="false">Menu</button>
+      <nav aria-label="Primary navigation">
+        <ul>
+          <li><a href="index.html" class="">Home</a></li>
+          <li><a href="about.html" class="">About</a></li>
+          <li><a href="services.html" class="">Services</a></li>
+          <li><a href="portfolio.html" class="">Portfolio</a></li>
+          <li><a href="pricing.html" class="">Pricing</a></li>
+          <li><a href="contact.html" class="">Contact</a></li>
+          <li><a href="summary.html" class="">Summary</a></li>
+          <li><a href="defense.html" class="active">Development Defense</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+  <main id="main-content">
+    <section class="page-intro">
+      <div class="section-card">
+        <h1>Development Defense</h1>
+        <p class="lead">This page documents the intent, process, and rationale behind the final website. It explains how
+          milestone planning shaped the final design and how the site serves the target audience of local photography
+          clients.</p>
+        <p>The website was designed to help visitors move from awareness to confidence to booking. Each page supports
+          that path through organized hierarchy, consistent branding, and accessible interaction.</p>
+      </div>
+      <img src="assets/images/HomePageLayout.png" alt="Illustrated screenshot placeholder of the home page design">
+    </section>
+    <section class="grid-3">
+      <article class="defense-card">
+        <h2>Design intent</h2>
+        <p>The business planning document established the site focus: showcase photography services, build trust, and
+          encourage booking. The final site keeps that focus with a home page hero, visible calls to action, client
+          reviews, and service previews.</p>
+      </article>
+      <article class="defense-card">
+        <h2>Professional presentation</h2>
+        <p>The wheat, seaweed, and neutral palette came directly from the aesthetics milestone. These colors keep the
+          site clean and calm while letting images remain the visual priority.</p>
+      </article>
+      <article class="defense-card">
+        <h2>Ease of use</h2>
+        <p>The navigation remains consistent on every page, forms use labels and helper text, and the pricing table
+          reduces confusion before booking. Mobile navigation is included for smaller screens.</p>
+      </article>
+    </section>
+
+    <h2 class="section-title">Page-by-page rationale</h2>
+    <div class="grid-2">
+      <article class="defense-card">
+        <h3>Home</h3>
+        <p>The home page introduces the business and quickly answers three questions: what the business offers, why it
+          is trustworthy, and what the visitor should do next.</p><img src="assets/images/HomePageLayout.png"
+          alt="Home page screenshot placeholder">
+        <p class="annotation">Milestone connection: the home page acts as the hub in the hierarchical structure chosen
+          earlier in the course.</p>
+      </article>
+      <article class="defense-card">
+        <h3>Services and Pricing</h3>
+        <p>Service cards break content into understandable categories, while the pricing table supports side-by-side
+          comparison. This improves readability and helps visitors self-select the right package.</p>
+        <p>The image in the screenshot was generated using OpenAI.
+          Citation: OpenAI. (2026). AI-generated image of photography session pricing page with service tiers. ChatGPT
+          (DALL·E)</p><img src="assets/images/PricingPage.png" alt="Services page screenshot placeholder">
+        <p class="annotation">The table was added specifically to meet the project rubric and to support easy package
+          comparison for end users.</p>
+      </article>
+      <article class="defense-card">
+        <h3>Contact / Booking</h3>
+        <p>The contact page combines inquiry and booking because in the milestone booking was the main desired
+          user action. Dropdowns and datalist suggestions reduce typing effort for the user.</p>
+        <p>The image in the screenshot was generated using OpenAI.
+          Citation: OpenAI. (2026). AI-generated image for a contact and booking page. ChatGPT (DALL·E)</p><img
+          src="assets/images/Contact&BookingPage.png" alt="Contact page screenshot placeholder">
+        <p class="annotation">The form was kept simple to remain usable, professional, and easy to complete on desktop
+          or mobile.</p>
+      </article>
+      <article class="defense-card">
+        <h3>Portfolio / About / Summary</h3>
+        <p>The portfolio proves quality visually.<br> The About page builds trust through the background and the
+          mission. <br> The summary page displays the user's submitted information. <br>
+          Together, they support the client's confidence before and after booking.</p>
+        <p class="annotation">These pages exist because of the planning done in the milestones.</p>
+      </article>
+    </div>
+
+    <h2 class="section-title">Code excerpts with annotations</h2>
+    <div class="grid-2">
+      <article class="defense-card">
+        <h3>Consistent navigation</h3>
+        <pre><code>&lt;nav aria-label="Primary navigation"&gt;
+  &lt;ul&gt;
+    &lt;li&gt;&lt;a href="index.html" class="active"&gt;Home&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href="about.html"&gt;About&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href="services.html"&gt;Services&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href="portfolio.html"&gt;Portfolio&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href="pricing.html"&gt;Pricing&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href="contact.html"&gt;Contact&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href="summary.html"&gt;Summary&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href="defense.html"&gt;Development Defense&lt;/a&gt;&lt;/li&gt;
+  &lt;/ul&gt;
+&lt;/nav&gt;</code></pre>
+        <p class="annotation">This excerpt shows the repeated navigation pattern that keeps movement between pages
+          logical and consistent, which was a major planning requirement.</p>
+      </article>
+      <article class="defense-card">
+        <h3>Accessible booking form</h3>
+        <pre><code>&lt;label for="session-type"&gt;Session type&lt;/label&gt;
+&lt;select id="session-type" name="session-type" required&gt;
+  &lt;option value=""&gt;Choose one&lt;/option&gt;
+  &lt;option&gt;Portrait Session&lt;/option&gt;
+&lt;/select&gt;
+
+&lt;label for="budget"&gt;Estimated budget&lt;/label&gt;
+&lt;select id="budget" name="budget"&gt;
+  &lt;option&gt;Under $200&lt;/option&gt;
+  &lt;option&gt;$200-$400&lt;/option&gt;
+  &lt;option&gt;$400-$900&lt;/option&gt;
+  &lt;option&gt;$900+&lt;/option&gt;
+&lt;/select&gt;</code></pre>
+        <p class="annotation">Labels, required fields, and list-based form controls were intentionally chosen to make
+          the booking process easier to understand and complete.</p>
+      </article>
+    </div>
+
+    <section class="section-card" style="padding:1.25rem; margin-top:1.25rem;">
+      <h2>Opportunities for improvement and growth</h2>
+      <p>If more time and resources were available, future updates could include implementation of React, a searchable
+        gallery, a client and
+        admin portal with a MongoDB for data storage, online payment integration, real scheduling availability synced to
+        a calendar. Additional content
+        could include blog posts with session tips, seasonal promotions, and a FAQ page for outfit planning, turnaround
+        times, and print options.
+      </p>
+    </section>
+  </main>
+  <footer>
+    <div class="footer-wrap">
+      <section>
+        <h2>Photomemories</h2>
+        <p>Professional local photography for portraits, events, graduations, and family milestones.</p>
+        <p><strong>Designer:</strong> Calvin Kugonza</p>
+      </section>
+      <section>
+        <h2>Quick Links</h2>
+        <p><a href="services.html">Services</a><br><a href="pricing.html">Pricing</a><br><a href="contact.html">Book a
+            Session</a></p>
+      </section>
+      <section>
+        <h2>Connect</h2>
+        <p><a href="https://www.instagram.com/" target="_blank" rel="noopener noreferrer">Instagram</a><br><a
+            href="https://www.facebook.com/" target="_blank" rel="noopener noreferrer">Facebook</a><br><a
+            href="mailto:hello@photomemories.example">photomemories@gmail.com</a></p>
+      </section>
+    </div>
+  </footer>
+  <script src="site.js"></script>
+</body>
+
+</html>

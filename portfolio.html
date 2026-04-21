@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Photography portfolio gallery with local video and images">
+  <title>Portfolio | Photomemories</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+  <header>
+    <div class="nav-wrap">
+      <a class="brand" href="index.html"><img src="assets/images/colored-logo.svg" alt="Photomemories logo"></a>
+      <button class="menu-toggle" aria-label="Toggle navigation" aria-expanded="false">Menu</button>
+      <nav aria-label="Primary navigation">
+        <ul>
+          <li><a href="index.html" class="">Home</a></li>
+          <li><a href="about.html" class="">About</a></li>
+          <li><a href="services.html" class="">Services</a></li>
+          <li><a href="portfolio.html" class="active">Portfolio</a></li>
+          <li><a href="pricing.html" class="">Pricing</a></li>
+          <li><a href="contact.html" class="">Contact</a></li>
+          <li><a href="summary.html" class="">Summary</a></li>
+          <li><a href="defense.html" class="">Development Defense</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+  <main id="main-content">
+    <section class="page-intro">
+      <div class="section-card">
+        <h1>Portfolio</h1>
+        <p class="lead">The portfolio is the visual proof of what we can accomplish together.</p>
+        <div class="button-row">
+          <button class="btn primary port active" type="button" data-filter="all">All</button>
+          <button class="btn port" type="button" data-filter="portrait">Portrait</button>
+          <button class="btn port" type="button" data-filter="event">Event</button>
+          <button class="btn port" type="button" data-filter="milestone">Milestone</button>
+        </div>
+      </div>
+      <div class="video-frame">
+        <h2>Behind the scenes videography</h2>
+
+        <div class="container1">
+          <div class="slider">
+            <video controls src="./assets/video/wedding.mp4"></video>
+            <video controls src="./assets/video/event.mp4"></video>
+            <video controls src="./assets/video/graduation.mp4"></video>
+            <video controls src="./assets/video/celebration.mp4"></video>
+          </div>
+
+          <div class="slideBtns">
+            <button id="btn2"><svg xmlns="http://www.w3.org/2000/svg" width="12" height="20" viewBox="0 0 12 20" id="left">
+                <g id="Page-1" fill="none" fill-rule="evenodd" stroke="none" stroke-width="1">
+                  <g id="Asset-1" fill="#000100" fill-rule="nonzero" transform="translate(-14 -8)">
+                    <g id="Lager_13" transform="translate(14 8)">
+                      <path id="Shape"
+                        d="M5.909 10.681a1.987 1.987 0 0 1-.278-.732c.004-.253.103-.496.278-.679l5.517-5.732c.761-.81.766-2.072.01-2.887l-.028-.03A1.959 1.959 0 0 0 8.554.613L.287 9.226A1.08 1.08 0 0 0 0 9.949c.044.275.141.538.287.775l8.267 8.665a1.959 1.959 0 0 0 2.854-.012l.028-.036a2.133 2.133 0 0 0-.01-2.9l-5.517-5.76z">
+                      </path>
+                    </g>
+                  </g>
+                </g>
+              </svg></button>
+            <button id="btn1"><svg xmlns="http://www.w3.org/2000/svg" width="12" height="20" id="right">
+                <path fill="#000100"
+                  d="M6.091 10.681c.14-.223.235-.472.278-.732a1.003 1.003 0 0 0-.278-.679L.574 3.538A2.116 2.116 0 0 1 .564.651L.592.62A1.959 1.959 0 0 1 3.446.613l8.267 8.613c.182.197.285.455.287.723a2.124 2.124 0 0 1-.287.775l-8.267 8.665a1.959 1.959 0 0 1-2.854-.012l-.028-.036a2.133 2.133 0 0 1 .01-2.9l5.517-5.76z">
+                </path>
+              </svg></button>
+          </div>
+        </div>
+
+      </div>
+    </section>
+    <div class="gallery-grid">
+      <figure class="portfolio-item" data-category="milestone"><img
+          src="assets/images/vecteezy_wedding-photo-session-in-nature-bride-and-groom-look-at_40861370.JPG"
+          alt="Wedding portfolio sample">
+        <figcaption>Wedding details and ceremony highlights</figcaption>
+      </figure>
+      <figure class="portfolio-item" data-category="portrait"><img src="assets/images/portrait.jpg"
+          alt="Portrait portfolio sample">
+        <figcaption>Clean portrait posing and natural edits</figcaption>
+      </figure>
+      <figure class="portfolio-item" data-category="milestone"><img src="assets/images/graduation.jpg"
+          alt="Graduation portfolio sample">
+        <figcaption>Graduation sessions with celebratory energy</figcaption>
+      </figure>
+      <figure class="portfolio-item" data-category="portrait"><img src="assets/images/familyPhoto.jpg"
+          alt="Family portfolio sample">
+        <figcaption>Family photography with warm lifestyle framing</figcaption>
+      </figure>
+      <figure class="portfolio-item" data-category="event"><img src="assets/images/eventPhoto.jpg"
+          alt="Event portfolio sample">
+        <figcaption>Local events, birthdays, and small business launches</figcaption>
+      </figure>
+      <figure class="portfolio-item" data-category="milestone"><img src="assets/images/localMoments.jpg"
+          alt="Mixed milestone portfolio sample">
+        <figcaption>Featured moments across multiple session types</figcaption>
+      </figure>
+    </div>
+  </main>
+  <footer>
+    <div class="footer-wrap">
+      <section>
+        <h2>Photomemories</h2>
+        <p>Professional local photography for portraits, events, graduations, and family milestones.</p>
+        <p><strong>Designer:</strong> Calvin Kugonza</p>
+      </section>
+      <section>
+        <h2>Quick Links</h2>
+        <p><a href="services.html">Services</a><br><a href="pricing.html">Pricing</a><br><a href="contact.html">Book a
+            Session</a></p>
+      </section>
+      <section>
+        <h2>Connect</h2>
+        <p><a href="https://www.instagram.com/" target="_blank" rel="noopener noreferrer">Instagram</a><br><a
+            href="https://www.facebook.com/" target="_blank" rel="noopener noreferrer">Facebook</a><br><a
+            href="mailto:hello@photomemories.example">photomemories@gmail.com</a></p>
+      </section>
+    </div>
+  </footer>
+  <script src="site.js"></script>
+</body>
+
+</html>
