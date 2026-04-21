@@ -21,7 +21,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
       const myObj = Object.fromEntries(formData.entries()); //converting form data input into object 
 
-      localStorage.setItem('userSubmission', JSON.stringify(myObj)); //save to local storage
+      sessionStorage.setItem('userSubmission', JSON.stringify(myObj)); //save to local storage
 
 
       const required = [...bookingForm.querySelectorAll('[required]')];
@@ -40,7 +40,7 @@ document.addEventListener('DOMContentLoaded', () => {
   }
 
   if (summary) { //checking for summary section
-    const savedData = localStorage.getItem('userSubmission'); //retrieving user's saved data
+    const savedData = sessionStorage.getItem('userSubmission'); //retrieving user's saved data
 
     if (savedData) {
 
